@@ -92,7 +92,6 @@ def home():
 def my_form_post():
     source_url = request.form['source_url']
     chrome_options = set_up_driver_options()
-    # source_url = 'https://www.fiverr.com/search/gigs?query=web%20scraping&source=top-bar&acmpl=1&search_in=everywhere&search-autocomplete-original-term=&search-autocomplete-available=true&search-autocomplete-type=recent-gigs-suggest&search-autocomplete-position=0'
     gigs = find_all_gigs(source_url, chrome_options)
 
     # set up data structure
